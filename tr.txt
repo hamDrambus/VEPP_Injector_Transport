@@ -1,0 +1,142 @@
+# L will be set in program
+# I for corrector and quadrupoles will be set later as well
+g_num_of_measurements = 20
+g_sigma_rejectoin_criterion = 5
+g_current_max_rel_fluct = 0 #percent
+g_current_max_abs_fluct = 0
+g_initial_s = -0.1
+
+add
+s = 0
+type = 3
+pers_name = "p0" #for test and pictures only #pickup #0
+
+add
+s = 1
+type = 1
+max_curr = 20
+min_curr = -20
+pers_name = "c1" #corrector #1
+#coef_x = 0.003
+
+g_current_min = 1
+g_current_max = 600
+
+add
+type=4
+pers_name = "s1"
+s = 3
+I = 400
+coef_x =0.1
+coef_y = -0.5
+
+add
+s=10
+type = 1
+pers_name = "c2"
+#coef_x = -0.002
+max_curr = 20
+min_curr = -20
+
+add
+s=12
+type = 2
+pers_name = "q1"
+coef_x = -0.272
+
+add 
+s=15
+type = 2 
+pers_name = "q2"
+coef_x=0.272
+
+add 
+s=17
+type = 1
+pers_name = "c3"
+#coef_x = 0.002
+max_curr = 20
+min_curr = -20
+
+add 
+s=21
+type = 3
+pers_name = "p1"
+
+add 
+s=30
+type = 4
+pers_name = "s2"
+I = 400
+coef_x = 0.025
+coef_y = 0.02#-0.0112
+L = 3
+
+add 
+s=32
+type = 1
+pers_name = "c4"
+#coef_x=0.001
+max_curr = 20
+min_curr = -20
+
+add 
+s=35
+type = 2
+pers_name = "q3"
+coef_x=-0.36
+
+add 
+s=39
+type = 2
+pers_name = "q4"
+coef_x=0.44
+
+add
+s=33
+type=3
+pers_name="p2"
+
+add
+s= 48
+type = 3
+pers_name = "p3"
+
+add
+type =4
+I=500
+s=60
+L = 2
+coef_x = 0.05615
+coef_y = -0.0205
+pers_name= "s3"
+
+add
+type= 1
+s= 63
+pers_name = "c5"
+#coef_x = -0.003
+max_curr = 20
+min_curr = -20
+
+add
+s=69
+type = 2
+pers_name = "q5"
+coef_x=-0.46
+
+add
+s=75
+type=2
+pers_name = "q6"
+coef_x = 0.378
+
+add
+type = 3
+s=82
+pers_name ="p5"
+
+add
+type = 3
+s=72
+pers_name ="p4"
